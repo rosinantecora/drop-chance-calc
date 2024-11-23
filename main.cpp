@@ -9,13 +9,13 @@ int main() {
     double dropRate;
     int attempts;
 
-    cout << "Enter the drop rate (as a decimal): ";
+    cout << "Enter the drop rate (in float): ";
     cin >> dropRate;
 
     cout << "Enter the number of attempts: ";
     cin >> attempts;
 
-    double chance = calculatorDropChance(dropRate, attempts);
+    double chance = dropChanceCalc(dropRate, attempts); //calc means calculator, chat. i'm just using slang
     cout << "The chance of getting the drop in " << attempts << " attempts is: " << chance * 100 << "%" << endl;
 
     return 0;
