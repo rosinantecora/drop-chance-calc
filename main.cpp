@@ -9,8 +9,9 @@ int main() {
     double dropRate;
     int attempts;
 
-    cout << "Enter the drop rate (in float): ";
+    cout << "Enter the drop rate: ";
     cin >> dropRate;
+    dropRate = dropRate/100;
 
     cout << "Enter the number of attempts: ";
     cin >> attempts;
